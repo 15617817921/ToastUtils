@@ -1,5 +1,6 @@
 apply plugin: 'com.android.application'
-
+apply plugin: 'com.github.dcendents.android-maven' // 增加
+group='com.github.1454846769@qq.com'
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
