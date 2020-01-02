@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:onClick="bt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="居中显示"
+     />
+        <Button
+            android:onClick="bt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="底部显示（自定义底部距离）"
+       />
+        <Button
+            android:onClick="bt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付宝样式"
+       />      <Button
+            android:onClick="bt4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QQ样式"
+       />  <Button
+            android:onClick="bt5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="默认样式"
+       />
+    </LinearLayout>
+</LinearLayout>
