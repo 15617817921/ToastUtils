@@ -30,6 +30,5 @@ public class MainActivity extends AppCompatActivity {
         ToastUtils.showQQStyle(this,"QQ样式");
     }
 
-    public void bt5(View view) {
-    }
+
 }

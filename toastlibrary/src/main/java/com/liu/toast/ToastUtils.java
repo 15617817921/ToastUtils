@@ -9,6 +9,7 @@ import android.view.View;
 import androidx.annotation.RequiresApi;
 
 import com.hjq.xtoast.XToast;
+import com.ms.toastlibrary.R;
 
 public class ToastUtils {
     private static XToast xToast;

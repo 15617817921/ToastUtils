@@ -1,26 +1,31 @@
-apply plugin: 'com.android.application'
-
+apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven' // 增加
+group='com.github.15617817921'
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
+
+
     defaultConfig {
-        applicationId "com.liu.toast"
         minSdkVersion 15
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
+
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
     }
+
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
 }
 
 dependencies {
-    implementation 'androidx.appcompat:appcompat:1.0.0'
-    implementation project(path: ':toastlibrary')
-
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.hjq:xtoast:2.6'/**toast*/
 }
