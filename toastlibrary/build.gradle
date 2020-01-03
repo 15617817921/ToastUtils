@@ -1,6 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven' // 增加
-group='com.github.15617817921'
+group = 'com.github.15617817921'
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
@@ -24,7 +24,11 @@ android {
     }
 
 }
-
+tasks.withType(Javadoc) {//防止编码问题
+    options.addStringOption('Xdoclint:none', '-quiet')
+    options.addStringOption('encoding', 'UTF-8')
+    options.addStringOption('charSet', 'UTF-8')
+}
 dependencies {
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'com.hjq:xtoast:2.6'/**toast*/
